@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Denis Stanley Espino Morán, estudiante de Ingeniería en Sistemas.">
+  <title>Denis Espino | Portafolio profesional</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio">DE<span>.</span></a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#habilidades">Habilidades</a><a href="#servicios">Servicios</a><a class="nav-cta" href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> PORTAFOLIO PERSONAL</p>
+        <h1>Hola, soy <span>Denis Stanley<br>Espino Morán.</span></h1>
+        <h2>Estudiante de Ingeniería en Sistemas</h2>
+        <p class="intro">Me interesa la tecnología, el soporte técnico y la administración de bases de datos. Estoy desarrollando mis conocimientos para crear soluciones útiles y confiables.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#contacto">Hablemos <span>↗</span></a>
+          <a class="button secondary" href="#sobre-mi">Conóceme</a>
+        </div>
+        <div class="quick-facts">
+          <div><strong>Office 365</strong><span>Productividad</span></div>
+          <div><strong>SQL Server</strong><span>Bases de datos</span></div>
+          <div><strong>Soporte TI</strong><span>Solución de problemas</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-frame"><img src="assets/perfil.png" alt="Fotografía de Denis Stanley Espino Morán"></div>
+        <div class="floating-card"><span class="status-dot"></span><div><strong>En constante aprendizaje</strong><small>Tecnología · Sistemas · Datos</small></div></div>
+        <div class="decor decor-one"></div><div class="decor decor-two"></div>
+      </div>
+    </section>
+
+    <section class="section soft" id="sobre-mi">
+      <div class="container about-grid">
+        <div><p class="eyebrow">01 / SOBRE MÍ</p><h2 class="section-title">Curiosidad por la tecnología.<br><span>Enfoque en soluciones.</span></h2></div>
+        <div class="about-text"><p>Soy estudiante de Ingeniería en Sistemas en la Universidad Tecnológica de El Salvador. Mi formación se enfoca en el soporte técnico, el mantenimiento básico de equipos y la creación y estructuración de bases de datos.</p><p>Me gusta aprender herramientas nuevas, trabajar de forma ordenada y convertir los problemas técnicos en oportunidades para mejorar.</p></div>
+      </div>
+    </section>
+
+    <section class="section container" id="habilidades">
+      <p class="eyebrow">02 / LO QUE ESTOY APRENDIENDO</p><h2 class="section-title">Habilidades <span>técnicas</span></h2>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon">365</div><h3>Microsoft Office 365</h3><p>Uso de herramientas de productividad para documentos, presentaciones y organización del trabajo.</p><div class="tag-row"><span>Word</span><span>Excel</span><span>PowerPoint</span></div></article>
+        <article class="skill-card"><div class="skill-icon">SQL</div><h3>SQL Server</h3><p>Fundamentos para diseñar, organizar y consultar bases de datos relacionales.</p><div class="tag-row"><span>Consultas</span><span>Tablas</span><span>Datos</span></div></article>
+        <article class="skill-card"><div class="skill-icon">IT</div><h3>Soporte técnico</h3><p>Conocimientos básicos de diagnóstico, mantenimiento y resolución de problemas en computadoras.</p><div class="tag-row"><span>Diagnóstico</span><span>Mantenimiento</span></div></article>
+      </div>
+    </section>
+
+    <section class="section soft" id="servicios">
+      <div class="container"><p class="eyebrow">03 / CÓMO PUEDO AYUDAR</p><h2 class="section-title">Servicios <span>profesionales</span></h2>
+        <div class="services-list">
+          <article><span class="service-number">01</span><div><h3>Soporte técnico básico</h3><p>Ayuda inicial para identificar problemas comunes de computadoras y orientar su solución.</p></div><span class="service-arrow">↗</span></article>
+          <article><span class="service-number">02</span><div><h3>Mantenimiento de equipos</h3><p>Apoyo en tareas básicas de revisión, organización y mantenimiento preventivo.</p></div><span class="service-arrow">↗</span></article>
+          <article><span class="service-number">03</span><div><h3>Organización de bases de datos</h3><p>Práctica académica en creación de tablas y estructura inicial de bases de datos SQL.</p></div><span class="service-arrow">↗</span></article>
+        </div>
+        <p class="disclaimer">Servicios presentados como áreas de formación y práctica académica.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section container" id="contacto">
+      <div class="contact-copy"><p class="eyebrow">04 / CONTACTO</p><h2 class="section-title">¿Tienes una idea<br>o un proyecto?</h2><p>Escríbeme mediante el formulario y conversemos sobre tecnología y oportunidades para aprender.</p><div class="contact-note"><span>✉</span><div><strong>Correo de contacto</strong><small>Completa el formulario para dejar tu mensaje.</small></div></div></div>
+      <form class="contact-form" id="contact-form">
+        <label for="name">Nombre</label><input id="name" name="name" type="text" placeholder="Tu nombre" required>
+        <label for="email">Correo electrónico</label><input id="email" name="email" type="email" placeholder="tu@correo.com" required>
+        <label for="message">Mensaje</label><textarea id="message" name="message" rows="4" placeholder="Cuéntame en qué puedo ayudarte..." required></textarea>
+        <button class="button primary submit-button" type="submit">Preparar mensaje <span>↗</span></button>
+        <p class="form-feedback" id="form-feedback" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><a class="brand" href="#inicio">DE<span>.</span></a><p>© <span id="year"></span> Denis Stanley Espino Morán · Portafolio académico</p><a href="#inicio" class="back-top">Volver arriba ↑</a></div></footer>
+</body>
+</html>
